@@ -1,104 +1,80 @@
-*{
-    box-sizing: border-box;
-}
-body{
+/* Reset some default styles */
+body, h1, ul, form {
     margin: 0;
-    font-family: sans-serif;
-    background-color: rgb(0, 0, 0);
-    color: aliceblue;
+    padding: 0;
 }
-.border{
-    border: 1px solid red;
+
+/* Style search bar */
+.search-bar {
+    background-color: #1DA1F2;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
 }
-.sidebar{
-    
+
+/* Style search form */
+.search-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.search-form input {
+    width: 80%;
+    padding: 5px;
+}
+
+.search-form button {
+    background-color: #1DA1F2;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Define sidebar styles */
+.sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
     position: fixed;
     top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 240px;
-    height: 100%;
-    padding: 40px 10px 30px 10px;
-    border-right: 1px solid #2f3336;
-    transition: all 0.4s;
-    margin-left: 12px;
-}
-
-.sidebar-header{
-    width: 100%;
-    margin-bottom: 16px;
-
-}
-.logo-img{
-    width: 35px;
-    min-height: 35px;
-    border-radius: 50%;
-    object-fit: cover;
-    transition: transform 0.4s;
-    margin-left: 12px;
-    margin-bottom: 120px;
-}
-.logo-img:hover{
-    transform: scale(1.2);
-}
-.sidebar button{
-height: 60px;
-background: transparent;
-border: 0;
-font-family: inherit;
-color: inherit;
-cursor: pointer;
-text-align: center;
-padding: 0;
-}
-
-.sidebar button > span{
-    display: inline-flex;
     align-items: center;
-    gap: 12px;
-    height: 40px;
-    padding: 0 16px  12px;
-    border-radius: 24px;
-    line-height: 1;
-    transition: all 0.2s;
+    padding: 20px 0;
 }
-.sidebar button:hover > span{
-    background: rgba(255,255,255,0.08);
+
+/* Style profile image */
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
-.sidebar i{
-    position: relative;
-    font-size: 28px;
-    transition: 0.2s;
+
+/* Style sidebar menu items */
+.menu {
+    list-style: none;
+    text-align: left;
+    margin-top: 20px;
 }
-.sidebar button span{
-    font-size: 16px;
+
+.menu li {
+    margin: 10px 0;
 }
-.sidebar > nav{
-    
-    
-    flex-direction: column;
-    width: 100%;
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
 }
-.main{
-    margin-left: 250px;
+
+.menu i {
     margin-right: 10px;
-    overflow: hidden;
-}
-@media (width < 920px){
-    .sidebar{
-        width: 72px;
-    }
-    .sidebar button > span{
-        width: 50px;
-    }
-    .sidebar button > span > span{
-        opacity: 0;
-        visibility: hidden;
-    }
-    .main{
-        margin-left: 78px;
-        transition: margin 0.4s;
-        
-    }
 }

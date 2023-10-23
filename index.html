@@ -3,79 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
-    <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-  />
-    <title>Projeto sidebar</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Página com Sidebar e Barra de Pesquisa</title>
 </head>
 <body>
+    <div class="search-bar">
+        <form class="search-form">
+            <input type="text" placeholder="Pesquisar">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
     <aside class="sidebar">
-
-        <nav>
-            <button>
-                <span>
-                    <i class="material-symbols-outlined">home</i>
-                    <span>
-                        logo-img
-                    </span>
-                </span>
-            </button>
-       
-       
-
-            <button>
-                
-                <span>
-                    <i class="material-symbols-outlined">search</i>
-                    <span>
-                        pesquisa
-                    </span>
-                </span>
-            </button>
-
-            <button>
-                <span>
-                    <i class="material-symbols-outlined">email</i>
-                    <span>
-                        Mensagens
-                    </span>
-                </span>
-            </button>
-
-            <button>
-                <span>
-                    <i class="material-symbols-outlined">person</i>
-                    <span>
-                        Profile
-                    </span>
-                </span>
-            </button>
-
-            <button>
-                <span>
-                    <i class="material-symbols-outlined">email</i>
-                    <span>
-                        Mensagens
-                    </span>
-                </span>
-            </button>
-
-            <header  class="sidebar-hider">
-                <img class="logo-img" src="https://raw.githubusercontent.com/JpSCabral/testes-blazar/a3f5522d77ab5940673d9ef64f96c04c1a9bef6e/img/avatar-tranmautritam-2.svg" alt="foto do usuario">
-            </header>
-
-        </nav>
-    </aside>
-
-    <main>
-        <div class="search-container">
-            <label for="search-input" class="search-icon"></label>
-            <input type="text" class="search-input" id="search-input">
+        <div class="profile">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYECc2RvY_GqHaMlSSr3iXZHSYJtRxFK-yHruUHyYcxQ&s" alt="Minha Foto de Perfil">
+            <h2>Pedro Sérgio</h2>
+            <p>@pedrocs</p>
         </div>
-    </main>
-    <script type="text/javascript" src="index.js"></script>
-
+        <ul class="menu">
+            <li><a href="#"><i class="fas fa-home"></i> Início</a></li>
+            <li><a href="#"><i class="fas fa-user"></i> Perfil</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> Mensagens</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i> Configurações</a></li>
+        </ul>
+    </aside>
 </body>
+</html>
+
 </html>
